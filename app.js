@@ -26,7 +26,7 @@ const stopWatchTimer = () => {
   min = String(min).length < 2 ? "0" + min : min;
   sec = String(sec).length < 2 ? "0" + sec : sec;
   mSec = String(mSec).length < 2 ? "0" + mSec : mSec;
-  stopWatch.innerHTML = `${min}: ${sec}:${mSec}`;
+  stopWatch.innerHTML = ` ${min}: ${sec}: ${mSec} `;
 };
 
 playBtn.addEventListener("click", () => {
@@ -35,7 +35,7 @@ playBtn.addEventListener("click", () => {
 
   if (isRunnig) {
     timer = setInterval(stopWatchTimer, 10);
-    playBtn.innerHTML = `<i class="fa-solid fa-circle-pause"></i>`;
+    playBtn.innerHTML = `<i id="yellow" class="fa-solid fa-circle-pause" ></i>` ;
   } else {
     clearInterval(timer);
     playBtn.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;

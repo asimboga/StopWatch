@@ -1,8 +1,30 @@
 body{
-    background-color: rgba(12, 56, 152, 0.5);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+button{
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px;
+    color: #5AEB2C;
+    background-color: gray;
+}
+
+.stopWatch{
+    font-size: 100px;
+    color: #5AEB2C;
+    border: #5AEB2C 5px solid;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+h1{
+    color:  #5AEB2C;
 }
